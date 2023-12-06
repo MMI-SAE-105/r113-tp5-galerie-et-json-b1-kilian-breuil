@@ -10,47 +10,47 @@
 "X" #000 #fff #fff 2px solid 0 0 0 0 0 100% 100% 100% 1rem 1rem 1rem 2px
 solid #fff 2rem 2rem 2rem 50% absolute auto background-color background-color
 block border border border-radius bottom center center color content cursor
-display display fixed font-family grid height height height left line-height 
+display display fixed grid height height left line-height 
 margin max-width padding place-content pointer position position
-rgba(0,0,0,0.9) right right sans-serif text-align top top width width
+rgba(0,0,0,0.9) right right top top width width
 }
 .overlay {
-    /* Sit on top of the page content */ 
-    /* Full width (cover the whole page) */
-    /* Full height (cover the whole page) */
-    /* Stay at the top */
-    /* Stay at the left */
-    /* Stay at the right */
-    /* Stay at the bottom */
-    /* Black background with opacity */
-    /* Add a pointer on hover */
-    /* Use a grid for easy centering */
-    /* Center vertically and horizontally */
+  position: fixed;  /* Sit on top of the page content */ 
+  width: 100% ; /* Full width (cover the whole page) */
+  height: 100% ; /* Full height (cover the whole page) */ 
+  top: absolute;  /* Stay at the top */
+  left: 0;  /* Stay at the left */
+  right: 0;  /* Stay at the right */
+  bottom: 0;  /* Stay at the bottom */
+  background-color: rgba(0,0,0,0.9);  /* Black background with opacity */
+  cursor: pointer;  /* Add a pointer on hover */
+  display: grid;  /* Use a grid for easy centering */
+  place-content: center;  /* Center vertically and horizontally */
 }
 .overlay::after {
-    /* Add content : "X" */
-    /* White text color */
-    /* Black background color */
-    /* Font family "sans-serif" */
-    /* Centered text */
-    /* Line height ( idem height ) */
-    /* Display as a block */
-    /* Position absolute */
-    /* 1rem from the top */
-    /* 1rem from the right */
-    /* 2rem width */
-    /* 2rem height */
-    /* White border of 2px */
-    /* Rounded border */
+  place-content: "X";  /* Add content : "X" */
+  color: white;  /* White text color */
+  background-color: black;  /* Black background color */
+  font-family: sans-serif;  /* Font family "sans-serif" */
+  text-align: center;  /* Centered text */
+  line-height: 2rem;  /* Line height ( idem height ) */
+  display: block;  /* Display as a block */
+  position: absolute;  /* Position absolute */
+  top: 1rem;  /* 1rem from the top */
+  right: 1rem;  /* 1rem from the right */
+  width: 2rem;  /* 2rem width */
+  height: 2rem;  /* 2rem height */
+  border: white;  /* White border of 2px */
+  border-radius: 100%;  /* Rounded border */
 }
 .overlay>figure {
-    /* No margin */
-    /* 1rem padding */
-    /* White border of 2px */
+   margin: 0; /* No margin */
+  padding: 1rem;  /* 1rem padding */
+  border: white;  /* White border of 2px */
 }
 .overlay>figure>img {
-    /* Max width 100% for responsive image */
-    /* Height auto for keeping the ratio */
+  max-width: 100%;/* Max width 100% for responsive image */
+  height: auto;  /* Height auto for keeping the ratio */
 }
   </style>
 </head>
